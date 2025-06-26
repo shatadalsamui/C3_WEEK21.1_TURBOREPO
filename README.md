@@ -4,23 +4,26 @@ This is a monorepo project using Turborepo - a high-performance build system for
 
 ## Key Features
 
-1. **Build System Orchestration**
+1. **Intelligent Caching System**
+   - Automatic local caching of task outputs (builds, tests, etc.)
+   - Content-aware hashing for precise cache invalidation
+   - Up to 90% faster rebuilds by skipping unchanged work
+   - Remote caching support for team/CI sharing (via Vercel)
+
+2. **Build System Orchestration**
    - Parallel task execution for maximum performance
    - Incremental builds (only rebuild what changed)
    - Pipeline dependency management (via `dependsOn` in turbo.json)
-   - Cloud caching for sharing build artifacts across teams and CI
 
-2. **Package Sharing**
+3. **Package Sharing**
    - Seamless workspace package referencing (via Yarn Workspaces)
    - Automatic dependency graph management
    - Shared tooling configurations (ESLint, TypeScript, etc.)
-   - Versioned package publishing support
 
-3. **Optimized Workflows**
-   - Content-aware hashing for precise cache invalidation
-   - Remote caching for instant CI builds
+4. **Optimized Workflows**
    - Task pipelines to define execution order
    - Zero-config support for popular frameworks
+   - Built-in profiling for performance optimization
 
 ## Current Structure
 
