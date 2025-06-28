@@ -113,11 +113,3 @@ The monorepo is configured with:
 1. Create a new directory in `packages/` or `apps/`
 2. Add a `package.json` with the appropriate configuration
 3. Run `yarn` from the root to link dependencies
-
-## Deployment
-
-Each app can be deployed independently. The build artifacts are stored in:
-- Next.js apps: `.next/` directory
-- Other packages: `dist/` directory
-
-For more information about Turborepo, see the [official documentation](https://turbo.build/repo)
